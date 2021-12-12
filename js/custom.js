@@ -6,7 +6,7 @@ function clock(){
         minuts = minuts < 10 ? minuts = '0' + minuts : minuts; 
     let seconds = date.getSeconds();
         seconds = seconds < 10 ? seconds = '0' + seconds : seconds; 
-        if(hours >= 12){
+        if(hours > 12){
             hours = hours - 12
             document.querySelector('small').innerText = 'pm';
         }else{
